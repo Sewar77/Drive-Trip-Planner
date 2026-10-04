@@ -43,7 +43,7 @@ STATIC_URL = "static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
 CORS_ALLOWED_ORIGINS = [
-    x.strip() for x in os.getenv("CORS_ALLOWED_ORIGINS", "http://localhost:5173").split(",") if x.strip()
+    x.strip() for x in os.getenv("CORS_ALLOWED_ORIGINS", "https://drive-trip-planner.vercel.app").split(",") if x.strip()
 ]
 CORS_ALLOW_ALL_ORIGINS = DEBUG
 
